@@ -69,7 +69,7 @@ exports.getAppointments = async (req, res) => {
 // Update an appointment
 exports.updateAppointment = async (req, res) => {
   try {
-    const { appointmentId } = req.params;
+    const {  id :appointmentId } = req.params;
     const { date, startTime, endTime } = req.body;
 
     const appointment = await Appointment.findById(appointmentId);
@@ -96,7 +96,7 @@ exports.updateAppointment = async (req, res) => {
 // Cancel an appointment
 exports.cancelAppointment = async (req, res) => {
   try {
-    const { appointmentId } = req.params;
+    const { id:appointmentId } = req.params;
 
     const appointment = await Appointment.findById(appointmentId);
     if (!appointment) {
