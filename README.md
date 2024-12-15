@@ -32,7 +32,7 @@ This repository contains the backend code for the Medical Appointment System, bu
 3. Create a `.env` file in the root directory and add the following:
    ```env
    PORT=5000
-   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/medical_appointments
+   MONGO_URI=
    JWT_SECRET=your_jwt_secret
    ```
 
